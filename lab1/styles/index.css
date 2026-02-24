@@ -39,7 +39,7 @@ header nav ul {
 }
 
 #banner {
-  background-image: url(/Taras-Klichkovskyi.github.io/lab1/images/banner.png);
+  background-image: url(../images/banner.png);
   background-position: center; 
   background-size: cover; 
   min-height: 60vh; 
@@ -280,5 +280,4 @@ footer a {
     flex-direction: column;
     gap: 30px;
   }
-
 }
