@@ -220,6 +220,7 @@ footer a {
 @media (max-width: 1024px) {
 
   header {
+    position: static;
     padding: 15px 40px;
   }
 
@@ -243,6 +244,7 @@ footer a {
 @media (max-width: 768px) {
 
   header {
+    position: static;
     flex-direction: column;
     gap: 15px;
     padding: 15px 20px;
