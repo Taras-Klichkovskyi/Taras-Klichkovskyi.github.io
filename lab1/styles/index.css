@@ -283,9 +283,10 @@ footer a {
     gap: 30px;
   }
 }
+
 .payment-form {
   margin-top: 10px;
-  max-width: 500px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -307,6 +308,7 @@ footer a {
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 14px;
+  width: 100%;
 }
 
 .form-group input:focus {
