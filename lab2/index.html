@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Платформа оренди спортивного обладнання RentSport">
+  <title>RentSport - Оренда спорядження</title>
+  <link type="image/png" rel="shortcut icon" href="images/logo.png">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <header>
+    <h1><a class="headerTitle" href="#">RentSport</a></h1>
+    <nav>
+      <ul>
+        <li><a class="navLink" href="#equipment">Обладнання</a></li>
+        <li><a class="navLink" href="#orend">Мої оренди</a></li>
+        <li><a class="navLink" href="#paymant">Оплата</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="banner">
+      <h1>Оренда спортивного обладнання</h1>
+      <p>Орендуйте спорядження для активного відпочинку</p>
+      <button class="btn">
+        <a href="#contact">Дізнатися більше</a>
+      </button>
+    </section>
+
+    <section id="equipment" class="sections">
+      <div class="sections-title">
+        <h2 class="section-heading">Наявне обладнання</h2>
+        <div class="line"></div>
+      </div>
+      <div class="equipment-grid"></div>
+    </section>
+
+    <section id="cart" class="sections">
+      <div class="sections-title">
+        <h2 class="section-heading">Кошик</h2>
+        <div class="line"></div>
+      </div>
+      <div id="cartItems"></div>
+      <div class="cart-footer">
+        <p id="totalPrice">Сума: 0 грн</p>
+        <button id="checkout-btn" class="btn large" type="button">Перейти до оплати</button>
+      </div>
+    </section>
+
+    <section id="orend" class="orend-section">
+      <div class="sections-title">
+        <h2 class="section-heading">Мої оренди</h2>
+        <div class="line"></div>
+      </div>
+      <button id="hide-btn" class="btn">Сховати оренди</button>
+      <div class="rents">
+        <article class="rent-block">
+          <h3>Активні оренди</h3>
+          <ul id="active-rents-list"></ul>
+        </article>
+        <article class="rent-block">
+          <h3>Історія оренд</h3>
+          <ul>
+            <li>- <a href="#">Намет</a> (Завершено 12.07.2025)</li>
+            <li>- <a href="#">Сноуборд</a> (Завершено 17.12.2024)</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="paymant" class="sections">
+      <div class="sections-title">
+        <h2 class="section-heading">Оплата</h2>
+        <div class="line"></div>
+      </div>
+      <form class="payment-form" id="payment-form" novalidate>
+        <div class="form-group">
+          <label for="fullname">Ім'я та прізвище</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Електронна пошта</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Номер телефону</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="card">Номер картки</label>
+          <input type="text" id="card" name="card" maxlength="19" placeholder="0000 0000 0000 0000" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="expiry">Термін дії</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" maxlength="3" required>
+          </div>
+        </div>
+
+        <p id="payment-message" class="payment-message hidden"></p>
+        <button type="submit" class="btn large">Оплатити</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-top">
+      <section class="footer-column">
+        <h2>RentSport</h2>
+        <ul>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Контакти</a></li>
+          <li><a href="#">Політика конфіденційності</a></li>
+        </ul>
+      </section>
+      <section class="footer-column">
+        <h2>Популярне</h2>
+        <ul>
+          <li><a href="#">Гірські велосипеди</a></li>
+          <li><a href="#">Рюкзаки</a></li>
+        </ul>
+      </section>
+      <section class="footer-column">
+        <h2>Контакти</h2>
+        <ul>
+          <li><a href="tel:+380637742650">+380 63 774 2650</a></li>
+          <li><a href="mailto:info@rentsport.ua">info@rentsport.ua</a></li>
+          <li>
+            <a href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A1%D1%82%D1%80%D0%B8%D0%B9%D1%81%D1%8C%D0%BA%D0%B0,+115%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+79000/@49.7856072,24.025108,19z/data=!3m1!4b1!4m6!3m5!1s0x473ae7d5c60624ff:0xc836543a1a46249d!8m2!3d49.7856072!4d24.0257517!16s%2Fg%2F11m6s24_77?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D">Львів, вул. Стрийська, 115В</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 RentSport. Усі права захищені.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
