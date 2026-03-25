@@ -1,0 +1,29 @@
+header {
+  z-index: 1000;
+  width: 100%;
+  position: sticky;
+  top: 0; 
+
+  color: #FFFFFF;
+  background-color: #244A8F; 
+
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 60px;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navLink:hover {
+  border-bottom: 2px solid white;
+}
+
+header nav ul {
+  list-style: none; 
+  display: flex;
+  gap: 20px;
+}
