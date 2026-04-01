@@ -1,0 +1,38 @@
+footer h2 {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #2F3746; 
+}
+
+footer a {
+  color: #BFC7D3;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 80px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 12px;
+}
+
+.footer-column li:hover {
+  border-bottom: 1px solid white;
+}
+
+.footer-bottom {
+  background-color: #222836;
+  padding: 20px 80px;
+  text-align: center;
+  color: #BFC7D3;
+  font-size: 14px;
+}
