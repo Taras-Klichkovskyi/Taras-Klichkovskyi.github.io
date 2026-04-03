@@ -1,9 +1,21 @@
+import "dotenv/config"
 import express from "express"
 import cors from "cors"
 import admin from "firebase-admin"
 import path from "path"
 import { fileURLToPath } from "url"
-import serviceAccount from "./serviceAccount.json" with { type: "json"}
+
+const rawServiceAccount = process.env.FIREBASE_SERVICE_ACCOUNT
+
+if (!rawServiceAccount) {
+  throw new Error("FIREBASE_SERVICE_ACCOUNT is not set")
+}
+
+const serviceAccount = JSON.parse(rawServiceAccount)
+
+if (typeof serviceAccount.private_key === "string") {
+  serviceAccount.private_key = serviceAccount.private_key.replace(/\\n/g, "\n")
+}
 
 admin.initializeApp({ credential: admin.credential.cert(serviceAccount) })
 const db = admin.firestore()
