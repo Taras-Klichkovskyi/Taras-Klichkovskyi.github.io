@@ -145,8 +145,8 @@ useEffect(() => {
       }
 
       const requestUrl = requestParams.toString()
-        ? `http://localhost:5000/api/payment?${requestParams.toString()}`
-        : "http://localhost:5000/api/payment";
+        ? `/api/payment?${requestParams.toString()}`
+        : "/api/payment";
 
       const res = await fetch(requestUrl, {
         method: "GET",

@@ -111,7 +111,7 @@ const Rentals = ({
     try {
       const token = await user.getIdToken();
 
-      const res =await fetch("http://localhost:5000/api/rentals", {
+      const res =await fetch("/api/rentals", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
