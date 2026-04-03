@@ -1,0 +1,15 @@
+#banner {
+  background-image: url(../images/banner.png);
+  background-position: center; 
+  background-size: cover; 
+  min-height: 60vh; 
+
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10%;
+  gap: 10px;
+}
+

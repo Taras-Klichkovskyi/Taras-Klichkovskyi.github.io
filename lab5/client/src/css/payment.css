@@ -1,0 +1,329 @@
+.paymant-page {
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(36, 74, 143, 0.12), transparent 32%),
+    linear-gradient(180deg, #f5f8fc 0%, #edf2f8 100%);
+}
+
+.paymant-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(300px, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+
+.paymant-hero-copy,
+.paymant-stats {
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 20px 48px rgba(17, 35, 68, 0.08);
+}
+
+.paymant-hero-copy {
+  background: linear-gradient(140deg, #123060 0%, #244a8f 60%, #3567bc 100%);
+  color: #ffffff;
+}
+
+.paymant-kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.paymant-hero-copy h1 {
+  margin: 12px 0;
+  font-size: clamp(32px, 5vw, 46px);
+}
+
+.paymant-hero-copy > p:not(.paymant-kicker) {
+  margin: 0;
+  max-width: 640px;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.7;
+}
+
+.paymant-filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.paymant-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.paymant-filter span {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.paymant-filter input {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  padding: 12px 14px;
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.paymant-filter input::placeholder {
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.paymant-filter input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.12);
+}
+
+.paymant-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  background-color: #ffffff;
+}
+
+.paymant-stats article {
+  border-radius: 18px;
+  padding: 18px;
+  background: linear-gradient(180deg, #f2f6fb 0%, #e7edf7 100%);
+}
+
+.paymant-stats span {
+  display: block;
+  margin-bottom: 8px;
+  color: #5c6b7f;
+  font-size: 14px;
+}
+
+.paymant-stats strong {
+  color: #123060;
+  font-size: 26px;
+}
+
+.paymant-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.paymant-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 100%;
+}
+
+.paymant-section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 0 4px;
+}
+
+.paymant-section-header h2 {
+  margin: 0 0 8px;
+  color: #123060;
+}
+
+.paymant-section-header p {
+  margin: 0;
+  color: #5c6b7f;
+  line-height: 1.6;
+}
+
+.paymant-count {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background-color: #123060;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.paymant-rentals {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rental-card {
+  display: flex;
+  gap: 18px;
+  padding: 20px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  box-shadow: 0 16px 36px rgba(17, 35, 68, 0.08);
+  border: 1px solid rgba(18, 48, 96, 0.08);
+}
+
+.rental-card-active {
+  border-color: rgba(31, 122, 70, 0.22);
+}
+
+.rental-card-completed {
+  border-color: rgba(91, 107, 127, 0.18);
+}
+
+.rental-card-image {
+  width: 136px;
+  height: 136px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 18px;
+  background-color: #f5f8fc;
+  padding: 12px;
+}
+
+.rental-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rental-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.rental-card-top h3 {
+  margin: 10px 0 6px;
+  color: #123060;
+}
+
+.rental-customer {
+  margin: 0;
+  color: #5c6b7f;
+}
+
+.rental-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.rental-badge-active {
+  background-color: #e8f7ee;
+  color: #1f7a46;
+}
+
+.rental-badge-completed {
+  background-color: #eef2f7;
+  color: #526277;
+}
+
+.rental-total {
+  color: #123060;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.rental-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.rental-card-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px;
+  border-radius: 16px;
+  background-color: #f5f8fc;
+}
+
+.rental-card-grid span {
+  color: #5c6b7f;
+  font-size: 13px;
+}
+
+.rental-card-grid strong {
+  color: #123060;
+}
+
+.rental-card-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #5c6b7f;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.paymant-empty {
+  border: 2px dashed rgba(18, 48, 96, 0.16);
+  border-radius: 22px;
+  padding: 28px;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.paymant-empty h3 {
+  margin: 0 0 10px;
+  color: #123060;
+}
+
+.paymant-empty p {
+  margin: 0;
+  color: #5c6b7f;
+}
+
+@media (max-width: 1080px) {
+  .paymant-hero,
+  .paymant-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .paymant-page {
+    padding: 16px;
+  }
+
+  .paymant-hero-copy,
+  .paymant-stats,
+  .rental-card {
+    padding: 20px;
+  }
+
+  .paymant-stats,
+  .rental-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .paymant-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .rental-card {
+    flex-direction: column;
+  }
+
+  .rental-card-image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .rental-card-top {
+    flex-direction: column;
+  }
+}
